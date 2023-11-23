@@ -219,13 +219,35 @@ svg {
 .main-img {
   max-width: revert;
 }
-.multiple-card {
+.image-container {
   position: relative;
+  width: fit-content;
 }
+.multiple-card {
+  position: absolute;
+  inset: 0;
+}
+
 .multiple-card > * {
   --card-padding: 2rem;
   width: min-content;
-  position: absolute;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .multiple-card > * {
+    --card-padding: 1rem;
+    --padding-box: 20px;
+    position: absolute;
+  }
+  .card-back {
+    top: var(--padding-box);
+    right: 0;
+  }
+  .card-front {
+    bottom: calc(-1 * var(--padding-box));
+    z-index: 1;
+  }
 }
 
 .multiple-card > * > *:not(.main-img) {

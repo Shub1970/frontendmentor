@@ -64,16 +64,34 @@
           />
         </picture>
         <div class="multiple-card">
-          <div class="card-back">
-            <img src="images/bg-card-back.png" class="main-img" alt="" />
-            <span class="card-back__cvc">123</span>
-          </div>
           <div class="card-front">
-            <img src="images/bg-card-front.png" alt="" class="main-img" />
+            <img
+              class="main-img"
+              alt="responsive"
+              srcset="
+                images/bg-card-front.png 280w,
+                images/bg-card-front.png 400w
+              "
+              sizes="(max-width:480px) 280px,400px"
+              src="images/bg-card-front.png"
+            />
             <img class="card-front__logo" src="./images/card-logo.svg" alt="" />
             <span class="card-front__number">0000 0000 0000 0000</span>
             <span class="card-front__name">Jane Appleseed</span>
             <span class="card-front__expiry">mm / yy</span>
+          </div>
+          <div class="card-back">
+            <img
+              class="main-img"
+              alt="responsive"
+              srcset="
+                images/bg-card-back.png 280w,
+                images/bg-card-back.png 400w
+              "
+              sizes="(max-width:480px) 280px,400px"
+              src="images/bg-card-back.png"
+            />
+            <span class="card-back__cvc">123</span>
           </div>
         </div>
       </div>
