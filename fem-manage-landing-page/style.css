@@ -319,6 +319,10 @@ body {
   margin-inline: auto;
 }
 
+:where(.flow :not(:first-child)) {
+  margin-top: var(--flow-spacer, 4rem);
+  outline: 4px solid red;
+}
 .even-columns {
   display: grid;
   gap: 1rem;
