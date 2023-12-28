@@ -18,7 +18,9 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#">
-            <img src="images/logo.svg" alt="manage" />
+            <svg class="logo-icon" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
           </a>
           <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
             <img src="images/icon-hamburger.svg" alt="" aria-hidden="true">
@@ -72,32 +74,35 @@
             </p>
           </div>
           <div>
-            <ul class="numbered-items flow" role="list">
-              <li class="flow" style="--flow-spacer:1rem">
-                
+            <ul class="numbered-items | flow" role="list">
+              <li class="flow" >
+                <div class="flow" style="--flow-spacer:1rem">
                 <h3 class="fs-600 fw-bold">Track company-wide progress</h3>
-                <p>
+                <p data-width="wide">
                   See how your day-to-day tasks fit into the wider vision. Go
                   from tracking progress at the milestone level all the way done
                   to the smallest of details. Never lose sight of the bigger
                   picture again.
                 </p>
+                </div>
               </li>
-              <li class="flow" style="--flow-spacer:1rem" >
+              <li class="flow" ><div class="flow" style="--flow-spacer:1rem">
                 <h3 class="fs-600 fw-bold">Advanced built-in reports</h3>
-                <p>
+                <p data-width="wide">
                   Set internal delivery estimates and track progress toward
                   company goals. Our customisable dashboard helps you build out
                   the reports you need to keep key stakeholders informed.
                 </p>
+                </div>
               </li>
-              <li class="flow"  style="--flow-spacer:1rem">
+              <li class="flow" ><div class="flow" style="--flow-spacer:1rem">
                 <h3 class="fs-600 fw-bold">Everything you need in one place</h3>
-                <p>
+                <p data-width="wide">
                   Stop jumping from one service to another to communicate, store
                   files, track tasks and share documents. Manage offers an
                   all-in-one team productivity solution.
                 </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -110,13 +115,13 @@
       </section>
       <section class="cta | padding-block-700 bg-accent-400 text-neutral-100 padding-block-900">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns vertical-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">
+              <p class="fs-primary-heading fw-bold">
                 Simplify how your team works today.
               </p>
             </div>
-            <div>
+            <div class="justify-self-end-md">
               <button class="button" data-type="inverted">Get Started</button>
             </div>
           </div>
@@ -126,22 +131,43 @@
 
     <footer class="bg-neutral-900 text-neutral-100 padding-block-700">
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href="">
-              <img src="images/logo.svg" alt="manage" />
+        <div class="footer-wrapper">
+            <a href="" class="footer_logo">
+              <svg class="logo-icon" width="146" height="24">
+                <use xlink:href="images/logo.svg#logo"></use>
+              </svg>
             </a>
-            <ul role="list" aria-label="Social Links">
-              <li><a href="#" aria-label="facebook"></a></li>
-              <li><a href="#" aria-label="youtube"></a></li>
-              <li><a href="#" aria-label="twitter"></a></li>
-              <li><a href="#" aria-label="pinterest"></a></li>
-              <li><a href="#" aria-label="instragram"></a></li>
+            <ul class="social-list footer_social" role="list" aria-label="Social Links">
+              <li><a href="#" aria-label="facebook">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+              <li><a href="#" aria-label="youtube">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-youtube"></use>
+                </svg>
+              </a></li>
+              <li><a href="#" aria-label="twitter">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+              <li><a href="#" aria-label="pinterest">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-pinterest"></use>
+                </svg>
+              </a></li>
+              <li><a href="#" aria-label="instagram">
+                <svg class="social-icon">
+                  <use xlink:href="images/social-icons.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
             </ul>
-          </div>
-          <div>
-            <nav class="footer-nav">
-              <ul role="list" aria-label="Footer">
+          
+            <nav class="footer-nav footer_nav">
+              <ul role="list" class="flow" style="--flow-spacer:1rem" aria-label="Footer">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
@@ -151,14 +177,11 @@
                 <li><a href="#">Privacy Policy</a></li>
               </ul>
             </nav>
-          </div>
-          <div>
-            <form action="post">
-              <input type="email" />
+            <form action="post" class="footer_form">
+              <input type="email"  />
               <button type="submit" class="button">Go</button>
             </form>
-            <p>Copyright 2020. All Rights Reserved</p>
-          </div>
+            <p class="footer_copyright">Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
     </footer>
